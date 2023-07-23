@@ -3,6 +3,28 @@
 @tailwind utilities;
 @layer base {
   body {
-    @apply font-body;
+    @apply font-primary text-base font-normal mx-auto;
+    @apply overflow-y-hidden ;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1440px;
+  }
+  #main1::-webkit-scrollbar{
+    display: none;
+  }
+  input {
+    @apply outline-none;
+  }
+  html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+  }
+  html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.025);
+  }
+  html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
