@@ -1,13 +1,12 @@
 import { Button } from 'components/button';
 import HeaderCampaign from 'components/common/HeaderCampaign';
 import { IconPlus } from 'icons';
-import LayoutDashboard from 'layout/LayOutDashBoard';
 import CampaignFeature from 'modules/campaign/CampaignFeature';
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Campaign = () => {
     return (
-        <LayoutDashboard>
+        <Fragment>
             <div className='flex flex-col mr-10'>
                 <div className='px-10 py-8 bg-white rounded-[20px] flex justify-between items-center'>
                     <div className=' flex justify-between gap-[25px]'>
@@ -23,19 +22,33 @@ const Campaign = () => {
                     <Button className='max-w-[174px] max-h-[52px] bg-bgButton' to="/add-camp"><span className='text-secondary'>Create campaign</span></Button>
                 </div>
                 <HeaderCampaign number={'(4)'}>Your Campaign</HeaderCampaign>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
+                {
+                    Array(4).fill(0).map(item =>
+                    (
+                        <CampaignFeature className='max-h-[266px]'></CampaignFeature>
+                    )
+                    )
+                }
+                <CampaignFeature className='max-h-[266px]'></CampaignFeature>
+                {
+                    Array(4).fill(0).map(item =>
+                    (
+                        <CampaignFeature className='max-h-[266px]'></CampaignFeature>
+                    )
+                    )
+                }
                 <Button className='max-w-[174px] max-h-[52px] bg-bgButton mx-auto'><span className='text-secondary'>See more+</span></Button>
                 <HeaderCampaign number={'(4)'}>Your Campaign</HeaderCampaign>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
-                <CampaignFeature></CampaignFeature>
+                {
+                    Array(4).fill(0).map(item =>
+                    (
+                        <CampaignFeature className='max-h-[266px]'></CampaignFeature>
+                    )
+                    )
+                }
                 <Button className='max-w-[174px] max-h-[52px] bg-bgButton mx-auto'><span className='text-secondary'>See more+</span></Button>
             </div>
-        </LayoutDashboard>
+        </Fragment>
     );
 };
 

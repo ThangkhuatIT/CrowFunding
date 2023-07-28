@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import InputGroup from 'components/common/inputGroup';
+import InputGroup from 'components/common/FormGroup';
 import LayoutAuthentication from 'layout/LayoutAuthentication';
 import useToggleValue from 'hooks/Toggle';
 

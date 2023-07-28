@@ -15,7 +15,7 @@ const Input = ({ type, control, name, placeholder, errors = "", children, ...res
             <input
                 id={name}
                 type={type}
-                placeholder={errors.length < 0 ? placeholder : ''}
+                placeholder={errors.length > 0 ? '' : placeholder}
                 className = {ClassNames("w-full px-8 py-4 text-sm font-medium border text-text-3  rounded-xl  dark:placeholder:text-text2 dark:text-white bg-transparent dark:border-darkStroke",
                          errors.length > 0 ? ' border-error' : 'border-strock',
                          children ? 'pr-16' : ''

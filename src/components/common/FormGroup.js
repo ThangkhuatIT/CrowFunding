@@ -1,5 +1,5 @@
 import React from 'react';
-const inputGroup = ({children}) => {
+const FormGroup = ({children}) => {
     return (
         <div className='flex flex-col'>
             {children}
@@ -7,4 +7,4 @@ const inputGroup = ({children}) => {
     );
 };
 
-export default inputGroup;
+export default FormGroup;

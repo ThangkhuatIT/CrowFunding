@@ -9,3 +9,6 @@ export const { default: IconProfile } = require("./IconProfile");
 export const { default: IconDashboard } = require("./IconDashboard");
 export const { default: CloseIcon } = require("./CloseIcon");
 export const { default: IconPlus } = require("./IconPlus");
+export const { default: IconOffer } = require("./IconOffer");
+export const { default: IconStar } = require("./IconStar");
+export const { default: IconFolder } = require("./IconFolder");

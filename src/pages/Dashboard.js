@@ -2,13 +2,12 @@ import { CampaignCard } from 'modules/campaign/campaignCard';
 import { v4 } from 'uuid';
 import CampaignGrid from 'modules/campaign/campaignCard/CampaignGrid';
 import HeaderCampaign from 'components/common/HeaderCampaign';
-import LayoutDashboard from 'layout/LayOutDashBoard';
-import React from 'react';
+import React, { Fragment } from 'react';
 import CampaignFeature from 'modules/campaign/CampaignFeature';
 
 const Dashboard = () => {
     return (
-        <LayoutDashboard>
+        <Fragment>
             <div className='m-5'>
                 <HeaderCampaign number={` (4)`}>
                     Your Campaign
@@ -43,7 +42,7 @@ const Dashboard = () => {
                     }
                 </CampaignGrid>
             </div>
-        </LayoutDashboard>
+        </Fragment>
     );
 };
 
